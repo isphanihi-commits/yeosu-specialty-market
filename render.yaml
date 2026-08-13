@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yeosu-specialty-market
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeployTrigger: commit
